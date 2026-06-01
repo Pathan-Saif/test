@@ -1,2 +1,3 @@
-text = input().replace(" ", "").lower()
-print("YES" if text == text[::-1] else "NO")
+text = input()
+vowels = set("aeiouAEIOU")
+print(sum(1 for ch in text if ch in vowels))
